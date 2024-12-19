@@ -739,7 +739,7 @@ a{
 }
 
 .container-video iframe{
-    width: 80%;
+    width: 100%;
     height: 500px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
@@ -1262,4 +1262,139 @@ footer{
         font-size: 1rem;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    #musicButton {
+        display: flex; /* Tampilkan musik button di iPad */
+        bottom: 29px;
+        left: 43.5rem; 
+        width: 7rem;
+        height: 7rem;
+        transform: scale(0.7);
+    }
+
+    #musicButton img {
+        position: absolute;
+        width:4rem;
+        height: 4rem;
+        left: 1em;
+        top: 0.1rem;
+    }
+
+
+
+
+    #Quotes {
+        display: none
+    }
+
+    .card-quote {
+        width: 50vw;
+        height: auto;
+        padding: 30px;
+    }
+
+    #surat {
+        font-size: 2rem;
+        margin-top: 10vh;
+    }
+
+    #ayat {
+        font-size: 1.2rem;
+        margin-top: 5vh;
+    }
+
+    #arti {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .pos-tr,
+    .pos-tl,
+    .pos-br,
+    .pos-bl {
+        width: 60px; /* Menyesuaikan ukuran ornamen */
+    }
+
+    .pos-tr {
+        top: -30vh;
+        left: 20vw;
+    }
+
+    .pos-tl {
+        top: -30vh;
+        left: -15vw;
+        transform: scaleX(-1) scale(0.9);
+    }
+
+    .pos-br {
+        top: 40vh;
+        left: 20vw;
+    }
+
+    .pos-bl {
+        top: 40vh;
+        left: -15vw;
+        transform: scaleX(-1) scale(0.9);
+    }
+
+
+    .hero img{
+        position: absolute;
+        transform: scale(1.8);
+        left: 4vw;
+        top: -20vh; 
+    }
+
+
+      .floating-navbar{
+        left: 12%;
+    transform: translateX(-5%); 
+    padding: 5px 10px;
+    top: 91%;
+    }
+
+    .nav-items{
+    padding: 10px 17px;
+    font-size: 19px;
+    cursor: pointer;
+    
+}
+
+
+#couple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.photo-container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.couple-photo {
+    width: 40%;
+    margin: 20px;
+}
+
+.couple-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+.and-symbol {
+    display: none;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+}
+
+
 
