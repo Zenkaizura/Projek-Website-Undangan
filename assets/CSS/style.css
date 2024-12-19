@@ -1,0 +1,1265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+:root {
+    --shadow: 0 2px 2px rgba{0, 0, 0.5};
+    --clorbtn: #F7A9A8;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    line-height: 19px;
+    z-index: 1;
+    background-image: url(../img/bg-cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.hero img{
+    position: absolute;
+    top: -31vh;
+    left: 18vw;
+    transform: scale(1.7);
+}
+
+body{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    font-family: Nunito Sans; 
+}
+
+.hero h1{
+    font-family: great vibes;
+    font-size: 4rem;
+    letter-spacing: 9px;
+    color: #ffb7c5;
+    
+}
+
+.hero p{
+    color: #5a5a5a;
+    font-size: 1rem;
+}
+
+.hero a{
+    margin-top:10px;
+    color:white;
+    background-color: var(--clorbtn);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: inline;
+}
+
+.hero a:hover{
+    background-color: white;
+    color: #ffb7c5;
+}
+
+
+@media (max-width:  728px) {
+    .hero h1{
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 728px) {
+    .hero img{
+        position: absolute;
+        transform: scale(1.2);
+        left: -64vw;
+        top: -25vh; 
+    }
+}
+
+
+/*---------------------------------------------SECTION  COVER UNDANGAN---------------------------------------------------*/
+
+
+
+.floating-navbar{
+    position: sticky;
+   bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: pink;
+    padding: 10px 15px;
+    border-radius: 5px;
+    justify-content: space-around;
+    box-shadow: 0px 4px 8px (0, 0, 0, 0.2);
+    z-index: 100;
+    width: fit-content;
+    top: 90%;
+    display: none;
+}
+
+.nav-items{
+    padding: 1px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items:hover{
+    background-color: #add;
+    color: pink;
+    
+}
+
+@media (max-width:728px){
+    .floating-navbar{
+        left: 50%;
+    transform: translateX(-5%); 
+    padding: 5px 10px;
+    top: 94%;
+    }
+
+    .nav-items{
+    padding: 5px 7px;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+}
+
+/*---------------------------------------------SECTION  NAVBAR--------------------------------------------------*/
+
+
+
+
+
+#musicButton{
+    position: fixed;
+   bottom: 20px;
+   left: 93vw;
+   width: 80px;
+   height:80px;
+   background-color: pink;
+   border-radius: 50px;
+   display: flex;
+   justify-content:flex-start;
+   cursor: pointer;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   display: none;
+
+}
+
+
+#musicButton img{
+    margin-top: 17px;
+    margin-left: 11px;
+    width: 52px;
+    height:52px;
+    transition: transform 0.5s ease;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.rotating{
+    animation: rotate 3s linear infinite;
+}
+
+
+@media (max-width:728px){
+    #musicButton{
+        top: 39.5rem;
+        left: 2vw;
+        width: 45px;
+        height:45px;
+        z-index: 100;
+    }
+
+    #musicButton img{
+        margin-top: 13px;
+        margin-left: 7px;
+        width: 25px;
+        height:25px;
+        transition: transform 0.5s ease;
+    }
+}
+
+/*---------------------------------------------SECTION Music--------------------------------------------------*/
+
+
+#Quotes{
+    display: none;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+}
+
+.card-quote{
+   
+    position: relative;
+    background-color: pink;
+    width: 35vw;
+    height: 40vw;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#surat{
+    line-height: 0;
+    margin-top: 20vh;
+    font: size 38px;
+}
+
+#ayat{
+    margin-top: 9vh;
+    margin-bottom: 25px;
+    font-size: 21px;
+}
+
+#arti{
+    margin-bottom: 1px;
+    font-size: 17px;
+}
+
+
+.pos-tr{
+    position: absolute;
+    top: -34vh;
+    left: 21vw;
+}
+
+.pos-tl{
+    position: absolute;
+    top: -34vh;
+    left: -10vw;
+    transform: scaleX(-1);
+}
+
+.pos-br{
+    position: absolute;
+    top: 42vh;
+    left: 22vw;
+   
+}
+
+.pos-bl{
+    position: absolute;
+    top: 42vh;
+    left: -12vw;
+   transform: scaleX(-1);
+}
+
+
+@media (max-width: 728px) {
+    .card-quote{
+        width: 60vw;
+        height: auto;
+        padding: 10px;
+    }
+
+    #surat {
+        font-size: 1.1rem; 
+        margin-top: 5vh;
+    }
+
+    #ayat{
+        font-size: 1.1rem;
+        margin-top: 3vh;
+    }
+
+    #arti{
+        font-size: 0.9rem;
+        margin-top: 0.5vh;
+        margin-bottom: 5vh;
+    }
+    
+
+    .pos-tr {
+        top: -33vh;
+        left: 17vw;
+        transform: scale(0.6);
+    }
+
+    .pos-tl {
+        top: -33vh;
+        left: -43vw;
+        transform: scaleX(-1) scale(0.6);
+    }
+
+    .pos-br {
+        top: 18vh;
+        left: 18vw;
+        transform: scale(0.6);
+    }
+
+    .pos-bl {
+        top: 18vh;
+        left: -43vw;
+        transform: scaleX(-1) scale(0.6);
+    }
+}
+
+
+/*---------------------------------------------SECTION Quote--------------------------------------------------*/
+
+
+
+
+#couple{
+    display: none;
+}
+.photo-container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.couple-content{
+    position: relative;
+    top: 100; 
+    left: 50%;
+    transform: translateX(-50%); 
+    color: black;
+    margin-top: 5rem;
+    padding: 12px 0px px;
+    width:600px;
+    height: 100px;
+
+}
+
+
+.couple-content h2{
+    color:black ;
+    text-align: center;
+    z-index: 2;
+    font-size: 44px;
+    font-family: "Dancing Script";
+    letter-spacing: 2px;
+    margin-bottom:20px;
+    animation: kebawahmuncul1 2s ease-out;
+
+}
+
+ .couple-content p{
+    font-size: 16px;
+    text-align:center;
+    line-height: 1.6;
+    animation: jadigede 2s ease-out;
+}
+
+@media (max-width:728px){
+    .couple-content {
+        width: 90vw; 
+        padding: 10px;
+        margin-top: 0; 
+        top: 0;
+    }
+
+    .couple-content h2 {
+        font-size: 30px; 
+        margin-bottom: 15px;
+    }
+
+    .couple-content p {
+        font-size: 12px; 
+        line-height: 1.2;
+        max-width: 90rem;
+    }
+}
+
+.couple-photo {
+    text-align: center;
+    margin: 0 50px;
+    max-width: 100%;
+}
+
+.couple-photo img {
+    width: 450px;
+    height: 575px;
+    object-fit: cover;
+    border-radius: 50% / 40%;
+    border: 2px solid #e9b1cd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.couple-photo h3 {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.couple-photo p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+.and-symbol {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-left:80px; 
+    margin-top: -90px;
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+}
+
+@media (max-width: 768px) {
+    .photo-container {
+        flex-direction: column; 
+    }
+
+    .couple-photo img {
+        max-width: 300px; 
+        width: 100%;
+    }
+
+    .and-symbol {
+        font-size: 36px;
+        margin: 10px 0; 
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    #couple{
+        margin-bottom: 60vh;
+    }
+
+    .couple-content h2 {
+        font-size: 36px;
+    }
+
+
+    .couple-content p {
+        font-size: 14px;
+    }
+    .couple-photo img {
+        max-width: 220px;
+        max-height: 600px;
+    }
+}
+/*---------------------------------------------SECTION Couple--------------------------------------------------*/
+
+
+#lokasi{
+    display: none;
+    margin-top: 20rem;
+    width: 100%;
+    height: 980px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#lokasi h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Dancing Script";
+    font-size: 3.5rem;
+}
+
+
+#lokasi-body {  
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap; 
+    padding: 2rem; 
+}
+
+.card-lokasi {
+    border-radius: 25px;
+    background-color: 	#fcd1d7;
+    width: 30rem; 
+    padding: 2rem; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-lokasi:hover{
+    transform: translateY(-10px);
+}
+.acara {
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+    color:#ff6cac;
+}
+
+.info-tgl {
+    line-height: 1.5; 
+    margin-bottom: 1rem;
+}
+
+.info-tgl h4, .info-tgl h3 {
+    margin: 0;
+}
+
+.alamat {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    padding: 0 1rem; 
+}
+
+.card-lokasi a {
+    position: relative;
+    background-color: #e9b1cd;
+    width: 190px;
+    height: 48px;
+    border-radius: 25px;
+    margin: 0 auto; 
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.card-lokasi a:hover{
+    background-color: white;
+}
+
+.card-lokasi a i{
+    color: black;
+    position: absolute;
+    left: 1rem;
+
+}
+
+.jam{
+    position: relative;
+    font-family: 'dancing script';
+    margin-left: 20px;
+}
+
+.jam i{
+    position: absolute;
+    left: 100px;
+}
+
+
+#container-map{
+    margin-top: 2rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container-map h2{
+    margin-bottom: 60px;
+    font-size: 3rem;
+}
+
+.container-map iframe{
+    width: 100%;
+    height: 900px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+@media (max-width: 728px) {
+
+
+    #lokasi h2{
+        margin-bottom: 1rem;
+    }
+
+    #lokasi{
+      margin-top: 1050px;   
+    }
+
+
+    #lokasi-body {
+        gap: 20px; 
+    }
+
+    .card-lokasi {
+       margin-right: 40px;
+    }
+
+    .alamat {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .jam{
+        margin: 0px 0px 10px 0px;
+    }
+
+    .jam i{
+        left: 34px;
+        top: 2px;
+        transform: scale(0.9);
+    }
+
+    #container-map h2{
+        font-size: 2.7rem;
+    }
+
+    iframe{
+        margin-left: 9px;
+    }
+}
+
+/*---------------------------------------------SECTION Acara--------------------------------------------------*/
+
+#Gallery{
+    display: none;
+    margin-top: 40rem;
+    width: 100%;
+    height: auto;
+}
+
+
+.container-gallery{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: pink;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+
+.title{
+    text-align: center;
+    font-family: "dancing script";
+    font-size:3rem;
+}
+
+
+.photo-gallery{
+    display: flex;
+    gap: 20px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media(max-width:728px){
+
+
+    #Gallery{
+        margin-top: 35rem;
+    }
+
+    .title{
+        margin-bottom: 30px;
+    }
+    .photo-gallery {
+       flex-direction: column;
+       gap:20px;
+    }
+
+    .column{
+    flex-direction: row;
+     flex-wrap: wrap;
+     gap: 15px;
+     justify-content: space-between;   
+    }
+}
+
+
+#Gallery h2{
+    margin-top: 5rem;
+    text-align: center;
+    font-family: 'dancing script';
+    font-size: 3rem;
+}
+.container-video{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container-video iframe{
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
+}
+
+@media(max-width:728px){
+
+    #Gallery h2{
+        margin-top: 4.5rem;
+        font-size: 2.5rem;
+    }
+    .container-video{
+        margin: 0;
+        padding: 0 10px; 
+    }
+
+    .container-video iframe{
+        width: 90%;
+        height: 200px; 
+        border-radius: 10px; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    }
+}
+/*---------------------------------------------SECTION Galeri--------------------------------------------------*/
+
+
+#Tamu-vip{
+    display: none;
+    margin-top: 10rem;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Tamu-vip h2{
+    font-family: 'dancing script';
+    font-size: 2rem;
+}
+
+
+
+
+    .table-tamu{
+        width: 80%;
+        border-collapse: collapse;
+        border-radius: 5px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        font-size: 1rem;
+        overflow: hidden;
+    }
+
+    .table-tamu thead th {
+        background-color: #ff6cac;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .table-tamu th,
+    .table-tamu td{
+        padding: 15px 20px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .table-tamu tbody tr:nth-child(even){
+        background-color: #f9f9f9;
+    }
+
+    .table-tamu tbody tr:hover {
+        background-color: #ffe6f0;
+    }
+    .table-tamu tbody td{
+        border-bottom: 1px solid black;  
+    }
+
+    @media(max-width:728px){
+        .table-tamu{
+            width: 100%;
+            font-size: 0.85rem;
+        }
+
+        .table-tamu th,
+        .table-tamu td{
+        padding: 10px;
+        }
+
+        .table-tamu thead th{
+            font-size: 1rem;
+        }
+
+        #Tamu-vip{
+            margin-top: 5rem;
+        }
+    }
+
+/*---------------------------------------------SECTION Table--------------------------------------------------*/
+
+#Story {
+    display: none;
+    margin-top: 10rem;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Story-title{
+    font-family: 'Dancing Script';
+    font-size: 3.5rem;
+}
+
+
+.story-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    background-color: #ffc0cb;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-wrapper img {
+    max-width: 300px;
+    height: auto;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 1.7rem;
+}
+
+.text-story h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-family: "Dancing Script", cursive;
+}
+
+.text-story p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color:  black;
+}
+
+.story-wrapper:hover{
+    transform: translateY(-10px);
+}
+
+
+
+@media (max-width: 768px) {
+
+    #Story{
+        margin-top: 3rem;
+    }
+
+
+
+    .Story-title{
+        font-size: 2.7rem;
+    }
+
+
+    .story-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-wrapper img {
+        margin: 0 auto 1rem auto;
+        max-width: 100%;
+    }
+
+    .text-story h2 {
+        font-size: 1.3rem;
+    }
+
+    .text-story p {
+        font-size: 0.9rem;
+    }
+}
+
+/*---------------------------------------------SECTION Story--------------------------------------------------*/
+
+#RSVP {
+    display: none;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.title-rsvp{
+    font-family: 'dancing script';
+    font-size: 2.5rem;
+}
+
+
+.rsvp-card{
+    background-color: pink;
+    border: 2px solid red ;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 450px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 10px  rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-card h2{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.rsvp-card p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#rsvp-form label{
+margin: 10px 0 5px 0;
+}
+
+#rsvp-form input[type="text"], input[type="email"], select, textarea{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.event-pilihan, .Pilihan-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.event-pilihan label, .pilihan-menu label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+textarea{
+resize: none;
+}
+
+#submit {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#submit:hover{
+    background-color: #444;
+}
+
+#thank-you-message{
+    display: none;
+}
+
+
+@media (max-width: 728px) {
+    .rsvp-card {
+        padding: 15px;
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    select, 
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+        margin-top: 15px;
+    }
+
+    .event-pilihan, .Pilihan-menu {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .event-pilihan label, .Pilihan-menu label {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    select, input[type="text"], input[type="email"] {
+        margin-bottom: 15px;
+    }
+}
+/*---------------------------------------------SECTION RSVP--------------------------------------------------*/
+
+#Hadiah{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+
+#Hadiah h2{
+    font-family: 'dancing script';
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#Hadiah p{
+    margin-top: 35px;
+    text-align: center;
+}
+
+.card-bank {
+    width: 450px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 0.1;
+    margin: 50px auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3 ease;
+}
+
+.card-bank:hover{
+    box-shadow: 0px 6px 20px 0, 0, 0, 0.15;
+}
+
+.card-bank img{
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.tebal{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.detail, .Rekening{
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+
+
+.copy-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #ddd; 
+    transform: scale(1.05);
+}
+
+.copy-btn:active {
+    background-color: white;  
+    transform: scale(1); 
+}
+
+@media (max-width:728px){
+    #Hadiah{
+        margin-top: 120px;
+    }
+
+   
+    #Hadiah p{
+        margin-top: 10px;
+       font-size: 1rem;
+        text-align: center;
+    }
+
+    .card-bank {
+        width: 90%;
+        margin: 20px auto; 
+    }
+
+    
+    .detail, .Rekening {
+        font-size: 0.9rem; 
+        margin-bottom: 1.5rem; 
+    }
+
+    .copy-btn {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+
+
+}
+/*---------------------------------------------SECTION Hadiah--------------------------------------------------*/
+
+#Pesan{
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+
+#Pesan h2{
+    font-family: 'dancing script';
+    font-size: 2.5rem;
+}
+
+.card-Doa{
+    background-color: pink;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 450px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 10px  rgba(0, 0, 0, 0.1);
+}
+
+
+.card-Doa h2{
+text-align: center;
+}
+
+.card-Doa p{
+    text-align: center; 
+
+}
+
+.nama-pengirim{
+    text-align: left;
+}
+
+.card-Doa input[type="text"]{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 18px;
+}
+
+@media (max-width:728px){
+    #Pesan h2{
+        text-align: center;
+    }
+}
+/*---------------------------------------------SECTION Pesan & Doa--------------------------------------------------*/
+
+
+footer{
+    display: none;
+    background-color: #ff6cac;
+    height: 39vh;
+    padding-top: 40px;
+    color: white;
+}
+
+
+.footer-item{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-item h2{
+    font-family: 'dancing script';
+
+}
+
+@media (max-width: 728px){
+    footer{
+        height: 46vh;
+    }
+
+    .footer-item p{
+        font-size: 1rem;
+    }
+}
+

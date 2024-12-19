@@ -1,0 +1,410 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web Undangan Online</title>
+</head>
+
+<body>
+    <section id="hero" class="hero">
+
+        <main>
+            <img src="assets/img/ornamen-cover.png" alt="Ornamen Cover">
+
+            <h4>We invite you to the wedding</h4>
+            <h1>Dior & Annisa</h1>
+            <p>Akan melangsungkan resepsi pernikahan, mohon bapak/ibu untuk datang.</p>
+            <br>
+            <a id="btn=buka-undangan" onclick="bukaUndangan()">Lihat Undangan</a>
+        </main>
+
+    </section>
+
+    <!-- Bagian Cover Web Undangan -->
+
+    <div class="floating-navbar">
+        <a href="#hero" class="nav-items">Home</a>
+        <a href="#couple" class="nav-items">Profil</a>
+        <a href="#lokasi" class="nav-items">Acara</a>
+        <a href="#Gallery" class="nav-items">Galeri</a>
+        <a href="#Story" class="nav-items">Cerita</a>
+        <a href="#RSVP" class="nav-items">RSVP</a>
+        <a href="#Pesan" class="nav-items">Ucapan</a>
+    </div>
+
+    <!-- Bagian Navbar -->
+
+    <div id="musicButton" onclick="playMusic()">
+        <img id="buttonIcon" src="assets/img/audio-off.png" alt="Music Icon">
+    </div>
+
+    <audio id="backgroundMusic" src="assets/audio/background-music.mp3" loop></audio>
+
+    <!-- Bagian Music -->
+
+    <section id="Quotes">
+        <div class="card-quote">
+
+            <h2 id="surat">Surah Ar-Rum ayat 21</h2>
+
+            <h4 id="ayat">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ ۝٢١
+            </h4>
+
+            <p id="arti">Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya.
+                Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+            <img src="assets/img/ornamen3.png" alt="Ornamen" class="pos-tr">
+            <img src="assets/img/ornamen3.png" alt="Ornamen" class="pos-tl">
+            <img src="assets/img/ornamen3.png" alt="Ornamen" class="pos-br">
+            <img src="assets/img/ornamen3.png" alt="Ornamen" class="pos-bl">
+        </div>
+    </section>
+
+    <!-- Bagian Quote -->
+
+    <section id="couple">
+        <div class="couple-content">
+            <h2>Bride and Groom</h2>
+            <p>Kami adalah sepasang manusia yang sedang berbahagia. Kami mengundang Bapak/Ibu/Saudara sekalian untuk menghadiri hari bahagia kami. Ini adalah kami.</p>
+        </div>
+
+        <div class="photo-container">
+
+            <div class="couple-photo">
+                <img src="assets/img/potocowok.jpg" alt="Foto Pria">
+                <h3>Gladior Alexander Rose</h3>
+                <p>Son of</p>
+                <p>Farrel D Ali</p>
+                <p>&</p>
+                <p>Natalie Kai</p>
+                <a href=""></a>
+            </div>
+
+            <div class="and-symbol">&</div>
+
+            <div class="couple-photo">
+                <img src="assets/img/potocewek.jpg" alt="Foto Wanita">
+                <h3>Anissa Ramadhani</h3>
+                <p>Son of</p>
+                <p>Agung Wibowo</p>
+                <p>&</p>
+                <p>Kafka Laura</p>
+                <a href="">@brianindraw</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Couple -->
+
+    <section id="lokasi">
+        <h2>Acara</h2>
+        <div id="lokasi-body">
+            <div class="card-lokasi">
+                <h3 class="acara">Resepsi</h3>
+                <h3 class="jam"><i class="fa-regular fa-clock"></i>6:00-8:00</h3>
+
+                <div class="info-tgl">
+                    <h3>Sabtu</h3>
+                    <h4>28 Oktober 2025</h4>
+                    <h3>Hotel Kencana Putih</h3>
+                </div>
+                <p class="alamat">Jl. KH. Noer Ali No.1G, RT.004/RW.002, Jakasampurna, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17145</p>
+                <a href="https://www.google.co.id/maps/search/Gedung+Nikah/@-6.1665364,106.8241224,15z?hl=id&entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot"></i> Location</a>
+            </div>
+
+            <div class="card-lokasi">
+                <h3 class="acara">Akad Nikah</h3>
+
+                <h3 class="jam"> <i class="fa-regular fa-clock"></i>7:00-12:00</h3>
+
+                <div class="info-tgl">
+                    <h3>Minggu</h3>
+                    <h4>29 Oktober 2025</h4>
+                    <h3>Hotel Kencana Putih</h3>
+                </div>
+
+                <p class="alamat">Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270</p>
+                <a href="https://www.google.co.id/maps/search/Gedung+Nikah/@-6.1665364,106.8241224,15z?hl=id&entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot"></i> Location</a>
+            </div>
+        </div>
+
+        <div id="container-map">
+            <h2>Location On Map</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15867.16180071164!2d106.83098885507816!3d-6.158813611262623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f59568483273%3A0x30484df944fcc3a4!2sGedung%20Pernikahan%20Graha%20Angkasa%20Pura%201!5e0!3m2!1sid!2sid!4v1727756011062!5m2!1sid!2sid"
+                width="1300" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <!-- Bagian Acara -->
+
+    <section id="Gallery">
+
+        <h2 class="title">Gallery</h2>
+
+        <div class="container-gallery">
+
+            <div class="photo-gallery">
+
+                <div class="column">
+                    <div class="photo">
+                        <img src="assets/img/gallery1.jpg" alt="Gallery 1">
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/gallery9.jpg" alt="Gallery 9">
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/gallery3.jpg" alt="Gallery 3">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="photo">
+                        <img src="assets/img/gallery4.jpg" alt="Gallery 4">
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/gallery5.jpg" alt="Gallery 5">
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/gallery8.jpg" alt="Gallery 8">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="photo">
+                        <img src="assets/img/gallery2.jpg" alt="Gallery 2">
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/gallery6.jpg" alt="Gallery 6">
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/gallery7.jpg" alt="Gallery 7">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h2>Video Kenangan</h2>
+
+        <div class="container-video">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/CGoxTMkNbmQ?si=4eTxWmRRDEt1E_ty"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+    </section>
+    <!-- Bagian Galeri -->
+
+    <section id="Tamu-vip">
+
+        <h2>Tamu Undangan Special</h2>
+
+        <table class="table-tamu">
+            <thead>
+                <tr>
+                    <th>Nama Tamu</th>
+                    <th>Kehadiran</th>
+                    <th>Jabatan</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Viktor Novikov</td>
+                    <td>Dikonfirmasi Hadir</td>
+                    <td>CEO IAGO</td>
+                </tr>
+
+                <tr>
+                    <td>Yuki Yamazaki</td>
+                    <td>Tertunda</td>
+                    <td>Aktris</td>
+                </tr>
+
+                <tr>
+                    <td>Ken Morgan</td>
+                    <td>Tidak dapat Hadir</td>
+                    <td>Pengacara</td>
+                </tr>
+
+                <tr>
+                    <td>Lukas Grey</td>
+                    <td>Dikonfirmasi Hadir</td>
+                    <td>aktor</td>
+                </tr>
+
+                <tr>
+                    <td>Dalia Margolis</td>
+                    <td>Dikonfirmasi Hadir</td>
+                    <td>CEO IAGO</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Bagian Tabel -->
+    <section id="Story">
+
+        <h2 class="Story-title">Our Story</h2>
+        <div class="story-wrapper">
+            <img src="assets/img/gallery1.jpg" alt="">
+
+            <div class="text-story">
+                <h2>Cerita awal Cinta</h2>
+                <p>Setiap kisah cinta dimulai dari pertemuan yang tak terduga, begitu pula dengan kami. Seolah-olah takdir yang mempertemukan dua hati di tengah keramaian dunia yang begitu luas. Kami bertemu pada sebuah hari yang biasa, tanpa ekspektasi, tanpa rencana besar. Namun, saat mata kami bertemu untuk pertama kalinya, dunia seakan melambat. Sebuah getaran lembut terasa, meski tidak ada yang kami ucapkan kala itu.
+                    Seiring berjalannya waktu, setiap pertemuan sederhana berubah menjadi momen-momen penuh kehangatan dan tawa. Obrolan ringan berubah menjadi percakapan mendalam tentang mimpi, harapan, dan masa depan. Dari situ, kami sadar bahwa hubungan ini lebih dari sekadar pertemanan biasa. Ada sesuatu yang lebih, sesuatu yang membuat kami berdua merasa lengkap ketika bersama. </p>
+            </div>
+        </div>
+
+        <div class="story-wrapper">
+            <img src="assets/img/gallery1.jpg" alt="">
+
+            <div class="text-story">
+                <h2>Awal kebahagiaan</h2>
+                <p id="rsvp-description">Tak ada perjalanan cinta yang sempurna, namun di setiap tantangan yang kami hadapi, kami belajar untuk saling mendukung dan menguatkan. Perjalanan ini penuh warna, dari saat-saat indah yang membawa senyuman hingga tantangan yang mengajarkan kami arti kebersamaan yang sesungguhnya. Di balik tawa, ada air mata perjuangan yang kami lalui bersama. Namun, justru itulah yang membuat cinta ini semakin kokoh.
+
+                    Kini, setelah berbagai kisah kami tuliskan bersama, tiba saatnya bagi kami untuk membuka lembaran baru. Kami telah memutuskan untuk mengambil langkah besar menuju masa depan, mempersatukan cinta ini dalam ikatan pernikahan. Hari istimewa itu semakin dekat, dan kami ingin merayakannya bersama orang-orang yang selalu menjadi bagian penting dalam hidup kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Bagian Story-->
+
+
+
+    <section id="RSVP">
+
+        <h2 class="title-rsvp">Our Invitation To You</h2>
+
+        <div class="rsvp-card">
+
+            <h2>RSVP</h2>
+            <p id="rsvp-description">Kami sangat menantikan kehadiran Anda di hari istimewa kami. Silakan konfirmasi apakah Anda dapat hadir dengan mengisi formulir di bawah ini.</p>
+
+            <form id="rsvp-form" onsubmit="return ValidasiForm()">
+
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+
+                <label for="kehadiran">Kehadiran:</label>
+
+                <select name="kehadiran" id="kehadiran" required>
+                    <option selected disabled>Pilih Kehadiran</option>
+                    <option value="hadir">Hadir</option>
+                    <option value="tidak-hadir">Tidak Hadir</option>
+                </select>
+
+                <label>Pilih event Yang anda ingin hadiri</label>
+
+                <div class="event-pilihan">
+                    <input type="radio" id="resepsi" name="event-pilih" value="resepsi" required>
+                    <label for="resepsi">Resepsi</label>
+
+                    <input type="radio" id="Akad Nikah" name="event-pilih" value="Akad Nikah" required>
+                    <label for="Akad Nikah">Akad Nikah</label>
+                </div>
+
+
+                <label>Pilihan Menu:</label>
+
+                <div class="Pilihan-menu">
+                    <input type="checkbox" id="vegan" name="meal" value="vegan">
+                    <label for="vegan">Vegetarian</label>
+
+                    <input type="checkbox" id="Meat" name="meal" value="Meat">
+                    <label for="vegan">Meat Lover</label>
+
+                    <input type="checkbox" id="Halal" name="meal" value="Halal">
+                    <label for="vegan">Halal</label>
+
+                    <label for="catatan">Catatan tambahan:</label>
+                    <textarea name="catatan" id="catatan" rows="3" placeholder="Masukkan catatan khusus..."></textarea>
+
+                    <button type="submit" id="submit">Kirim</button>
+                </div>
+            </form>
+
+            <div id="thank-you-message">
+                <h3>Terima kasih atas konfirmasi Anda!</h3>
+            </div>
+        </div>
+
+    </section>
+    <!--Bagian Rsvp-->
+
+    <section id="Hadiah">
+        <h2>Kirim Kado</h2>
+        <p>Terima kasih atas doa dan restu yang telah Anda berikan. Jika Anda ingin mengirimkan hadiah & kado nikah, Anda bisa mengirim melalui informasi berikut.</p>
+
+        <div class="card-bank">
+            <img src="assets/img/logo-mandiri.png" alt="Logo Mandiri Syariah" class="bank-logo">
+            <p class="tebal">Nama Bank</p>
+            <p class="detail">Bank Mandiri Indonesia</p>
+
+            <p class="tebal">Nomor Rekening</p>
+            <p class="Rekening">0653247911</p>
+
+            <button class="copy-btn" onclick="CopyRekening()">Copy Rekening</button>
+        </div>
+
+        <div class="card-bank">
+            <img src="assets/img/logo-mandiri.png" alt="Logo Mandiri Syariah" class="bank-logo">
+            <p class="tebal">Nama Bank</p>
+            <p class="detail">Bank Mandiri Indonesia</p>
+
+            <p class="tebal">Nomor Rekening</p>
+            <p class="Rekening">365428911</p>
+
+            <button class="copy-btn" onclick="CopyRekening()">Copy Rekening</button>
+        </div>
+    </section>
+    <!--Bagian Hadiah-->
+
+
+    <section id="Pesan">
+        <h2>Pesan dan Doa untuk pengantin</h2>
+        <div class="card-Doa">
+            <h2 class="title-doa">Pesan & Doa</h2>
+            <p id="doa-description">Kehadiran dan doa restu dari Bapak/Ibu/Saudara/i sangat berarti bagi kami. Dengan penuh kebahagiaan, kami mengundang Anda untuk turut merayakan hari istimewa kami. Semoga kehadiran Anda membawa berkah dan kebahagiaan bagi perjalanan cinta kami.</p>
+            <form>
+                <label for="nama-pengirim">Nama Pengirim:</label>
+                <input type="text" id="nama-pengirim" name="nama-pengirim" required>
+                <textarea name="Pesan" id="pesan" rows="3" placeholder="Pesan dan Doa yang ingin dikirimkan kepada pengantin..."></textarea>
+                <button type="submit" id="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+    <!--Bagian Pesan & Doa-->
+
+
+    <footer id="footer">
+        <div class="footer-item">
+            <h2>Terima Kasih</h2>
+            <p>kami kedua mempelai mengucapkan terima kasih yang sangat besar untuk seluruh hadirin yang telah menyempatkan waktu untuk bisa hadir di acara resepsi pernikahan ini.</p>
+
+            <div>
+                <p>©2024 | Designed & made by Qatrunada Azura</p>
+            </div>
+    </footer>
+
+
+</body>
+
+</html>
+<script src="assets/JS/script.js"> </script>
